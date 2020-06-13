@@ -1,9 +1,26 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Container, Header, BalanceContainer, BalanceTitle, Balance, Body} from './styles';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Suggestions from '../../components/Suggestions';
 
 const Home: React.FC = () => {
     return (
-        <Text>Home</Text>
+        <Container>
+            <Body>
+                <Header>
+                    <Icon name="qrcode" size={30} color='#10c86e' />
+
+                    <BalanceContainer>
+                        <BalanceTitle>Meu Saldo</BalanceTitle>
+                        <Balance>R$ 0,00</Balance>
+                    </BalanceContainer>
+
+                    <Icon name="gift" size={30} color='#10c86e' />
+                </Header>
+
+                <Suggestions />
+            </Body>
+        </Container>
     )
 }
 
