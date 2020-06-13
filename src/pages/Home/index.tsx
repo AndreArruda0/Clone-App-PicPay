@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Header, BalanceContainer, BalanceTitle, Balance, Body} from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Suggestions from '../../components/Suggestions';
+import Acitivies from '../../components/Activities';
 
 const Home: React.FC = () => {
     return (
@@ -19,6 +20,8 @@ const Home: React.FC = () => {
                 </Header>
 
                 <Suggestions />
+
+                <Acitivies />
             </Body>
         </Container>
     )
